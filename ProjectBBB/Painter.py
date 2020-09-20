@@ -26,7 +26,23 @@ class Painter():
     pass
 
 class Canvas():
-
+    def __init__(self,graph):
+        self.graph = graph
+        pass
+    
+    def get_nodes(self,strings):
+        rs = []
+        dic = {}
+        for key in strings:
+            if key is int:
+                n = get_node()
+                rs.append(n)
+                dic[n] = [key]
+            elif key is str:
+                n = get_node(color = key)
+                rs.append(n)
+                
+        return rs,dic
     pass
 
 def get_node(tag = None, color = None):
