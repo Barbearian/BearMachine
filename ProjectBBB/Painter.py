@@ -28,22 +28,40 @@ class Painter():
 class Canvas():
     def __init__(self,graph):
         self.graph = graph
+        self.color_dic = {}
+
         pass
     
     def get_nodes(self,strings):
         rs = []
-        dic = {}
+        dic = self.color_dic
         for key in strings:
-            if key is int:
+            if type(key) is int:
                 n = get_node()
                 rs.append(n)
-                dic[n] = [key]
-            elif key is str:
+                dic[n] = key
+            elif type(key) is str:
                 n = get_node(color = key)
                 rs.append(n)
                 
-        return rs,dic
+        return rs
     pass
+
+    def connect(self):
+        dic2 ={}
+        pool = []
+        dic = self.color_dic
+        for node in dic.keys():
+            key = dic[node]
+            if key in dic2.keys():
+                last = dic2[key]
+                rel = Relationship(last,"is",node)
+                pool.append(rel)
+                
+            dic2[key] = node
+            
+            pass
+        return pool
 
 def get_node(tag = None, color = None):
     n = Node()
@@ -65,7 +83,6 @@ def test(graph):
     bm.hear_strings("1+x=y")
     pass
 
-
 def append_next(graph,end,next_node):
     graph.create(next_node)
    
@@ -84,7 +101,14 @@ def append_is(graph,end,next_node):
 
 if __name__ == "__main__":
     graph =  Graph(password="Bb19980123")
-    test(graph)    
+   # test(graph)    
     
+    c = Canvas(graph)
+    nodes1 = c.get_nodes(["1","+",0,"=",1])
+    nodes2 = c.get_nodes([0,1])
+    
+   
+    
+    print(c.connect())
     
    
