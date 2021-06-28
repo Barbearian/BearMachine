@@ -1,8 +1,9 @@
 # BearMachine
+## Introduction
 BearMachine is an graph based AI framework running on Unity. 
 It explores the possibility of real time interactive learning via constructing state machine like graph structure by parsing sequential signals.
 
-## Components:
+## Components
 
 ### Grids: A 2D infinite Tape
 
