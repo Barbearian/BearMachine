@@ -18,7 +18,7 @@ a Graph used to tell tracker how to react to a state.
 It not hard to see BearMachine is turling complete. 
 You could read or write on grids, track could move around and change values on Components, and a directed graph will tell the tracker how to move around.
 
-/***********/
+
 Maybe people will wonder why am I reinventing the wheel. 
 However, it is not a reinvention but discovery on the associations between grids cells in ethortinal cortex and turling machine.
 What if we were turling complete? 
