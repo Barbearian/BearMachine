@@ -55,11 +55,16 @@
   <ItemGroup>
     <Compile Include="Assets\BearMachine\Graph\MyNode.cs" />
     <Compile Include="Assets\BearMachine\Graph\MyGraph.cs" />
-    <Compile Include="Assets\BearMachine\GraphEditor\BaseNodeView.cs" />
-    <Compile Include="Assets\BearMachine\GraphEditor\BaseGraphCustomEditor.cs" />
-    <Compile Include="Assets\BearMachine\GraphEditor\BaseNodeSearchWindow.cs" />
-    <Compile Include="Assets\BearMachine\GraphEditor\BaseGraphEditorWindow.cs" />
     <Compile Include="Assets\BearMachine\GraphEditor\BaseGraphView.cs" />
+    <Compile Include="Assets\BearMachine\GraphEditor\BaseNodeSearchWindow.cs" />
+    <Compile Include="Assets\BearMachine\GraphEditor\BaseGraphCustomEditor.cs" />
+    <Compile Include="Assets\BearMachine\GraphEditor\BaseNodeView.cs" />
+    <Compile Include="Assets\BearMachine\GraphEditor\BaseGraphEditorWindow.cs" />
+    <Compile Include="Assets\BearMachine\SensoryInput\ObjectVector.cs" />
+    <Compile Include="Assets\BearMachine\Grids\Grids.cs" />
+    <Compile Include="Assets\BearMachine\Grids\Tracker.cs" />
+    <Compile Include="Assets\BearMachine\SensoryInput\Scanner.cs" />
+    <Compile Include="Assets\BearMachine\SensoryInput\ScannerPainter.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

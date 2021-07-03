@@ -35,9 +35,9 @@ namespace BearMachine{
                 new SearchTreeEntry(new GUIContent(text: "Basic Node")){
                     userData = NodeType.BasicNode, level = 2
                 },
-                new SearchTreeEntry(new GUIContent(text: "State Node")){
-                    userData = NodeType.StateNode, level = 2
-                },
+               // new SearchTreeEntry(new GUIContent(text: "State Node")){
+                 //   userData = NodeType.StateNode, level = 2
+                //},
             };
             return tree;
         }
